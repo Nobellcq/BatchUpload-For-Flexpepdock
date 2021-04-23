@@ -4,7 +4,7 @@ import sys
 
 setup(
     name="flexpepdock",
-    version="1.0.6",
+    version="1.1.3",
     author="nobel",
     author_email="nanjilincq@foxmail.com",
     description="A Python library for batch upload for flexpepdock.",
@@ -31,6 +31,11 @@ setup(
          'Programming Language :: Python :: 3.7',
          'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        'console_scripts': [
+            'batchUpload = flexpepdock.batchUpload:main'
+        ]
+    },
     zip_safe=True,
     install_requires=[
 	'requests_toolbelt', 'bs4', 'requests'

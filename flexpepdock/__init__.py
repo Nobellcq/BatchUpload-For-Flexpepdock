@@ -1,1 +1,1 @@
-from .getParams import *
+from .batchUpload import *
